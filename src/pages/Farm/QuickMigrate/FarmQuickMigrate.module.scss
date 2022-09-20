@@ -1,0 +1,94 @@
+@import "../../../styles/variables";
+
+.page{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.container{
+  width: 600px;
+}
+.checkbox{
+  display: flex;
+  align-items: center;
+
+  .label{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+    user-select: none;
+  }
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    margin-right: 5px;
+  }
+}
+.title{
+  margin-top: 20px;
+}
+.heading{
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+.token{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0;
+
+  .token{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 5px;
+
+    .title{
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .balance{
+      font-size: 11px;
+      color: #919191;
+    }
+  }
+}
+.contents{
+  padding: 20px;
+  background-color: $dard_black;
+  border-radius: 15px;
+  font-size: 16px;
+  color: $input_text_color !important;
+  font-weight: normal;
+}
+.plus{
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.leftOver{
+  margin-top: 20px;
+  font-size: 12px;
+  color: white;
+  h2{
+    margin-left: 8px;
+    margin-bottom: 3px;
+  }
+}
+.notes{
+  margin-top: 7px;
+  font-size: 11px;
+  text-align: center;
+}
+.danger{
+  color: $red;
+  margin-top: 10px;
+
+}

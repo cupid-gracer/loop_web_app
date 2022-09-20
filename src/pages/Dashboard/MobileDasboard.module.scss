@@ -1,0 +1,94 @@
+@import "../../styles/mixins";
+
+.chart_container {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  padding: 0px 4px 0 2px;
+  > * {
+    margin: 0 !important;
+  }
+  > div {
+    margin-top: 0;
+    margin-bottom: 0;
+    article {
+      align-items: flex-start;
+    }
+  }
+  > div:first-child {
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+  > div:first-child .article {
+    align-items: flex-start;
+  }
+
+  .row {
+    margin-top: 15px !important;
+  }
+  .firstChart {
+    margin-top: 0 !important;
+    margin-bottom: 15px !important;
+  }
+}
+.row {
+  margin-top: 15px !important;
+}
+.CzcardGrid .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 21px !important;
+}
+.CzcardGrid * {
+  margin: 0;
+  padding: 0;
+}
+.CzcardGrid {
+  margin: 0;
+  padding: 0;
+  min-height: 133.2px;
+}
+.CzcardGrid section {
+  width: 100%;
+  padding: 0 15px;
+}
+.CzcardGrid section section {
+  padding-left: 0;
+}
+.CzcardGrid i {
+  margin-left: 5px;
+}
+@include mobile {
+  .totalPairs {
+    display: none;
+  }
+  .CzcardGrid:last-child {
+    display: none;
+  }
+}
+.card_main {
+  padding: 20px $card-padding-horizontal;
+  border-radius: 20px;
+}
+.label {
+  font-weight: 400 !important;
+  white-space: nowrap;
+  padding-left: 4px;
+}
+.loading {
+  width: 100px;
+  animation-duration: 2s;
+}
+.styling{
+  margin: -15px;
+  margin-bottom: unset;
+  border-radius: 21px !important;
+  margin-top: 8px !important;
+}

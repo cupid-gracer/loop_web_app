@@ -1,0 +1,30 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+
+.submit,
+.contents {
+  margin: 30px 0;
+}
+.headerDetail {
+  text-align: center;
+}
+.swapSubmit {
+  margin: 30px 0 0 0;
+}
+.slippage div {
+  padding: 1px 5px !important;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  //width: max-content;
+  width: 50px;
+}
+.slippage {
+  margin-top: -59px;
+  margin-left: -200px;
+  @include mobile {
+    margin: unset !important;
+  }
+}

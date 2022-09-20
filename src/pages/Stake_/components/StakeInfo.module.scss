@@ -1,0 +1,142 @@
+.card {
+    background-color: #131722a8;
+}
+
+.panelSubtitle {
+    // background-color: rgb(146, 74, 204);
+    display: block;
+    // float: right;
+    text-align: end;
+    span {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #9BB0CF;
+    }
+    div {
+        span:nth-child(1) {
+            font-family: 'Lexend';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 19px;
+            line-height: 24px;
+            color: #C83E93;
+        }
+        span:nth-child(2) {
+            font-family: 'Lexend';
+            font-style: normal;
+            font-size: 19px;
+            line-height: 24px;
+            color: white;
+        }
+    }
+}
+
+.panelHeader {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #2D2D2D;
+}
+
+.panelTitle {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+}
+
+table {
+    margin: 0 !important;
+    font-family: 'Lexend';
+    tr {
+        height: 68px;
+    }
+    thead tr {
+        border-bottom: 1px solid #2D2D2D;
+        height: 50px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #9BB0CF;
+        .voteEscrowTeam {
+            font-weight: 400;
+        }
+    }
+    tbody tr {
+        &:nth-child(odd) {
+            background: rgba(19, 23, 34, 0.5);
+        }
+        &:nth-child(even) {
+            background: #20202E;
+        }
+    }
+    .voteEscrowTeam {
+        padding: 0 0 0 20px !important;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 19px;
+        div {
+            display: inline-flex;
+            align-items: center;
+            img {
+                margin-right: 7px;
+            }
+        }
+    }
+    .apr,
+    .loopPower,
+    .action {
+        text-align: center;
+    }
+    tbody .apr {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 19px;
+        color: #32FE9A;
+    }
+    tbody .loopPower {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 19px;
+        // background: linear-gradient(94.16deg, #FF52BC 10.37%, #01E6FF 41.22%);
+        span {
+            &:nth-child(1) {
+                color: #FF52BC;
+                margin-right: 3px;
+            }
+            &:nth-child(3) {
+                color: #01E6FF;
+            }
+            &:nth-child(even) {
+                font-weight: normal;
+                font-size: 13px;
+            }
+        }
+    }
+    tbody .totalLocked {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 19px;
+    }
+    tbody .action {
+        button {
+            border-radius: 10px;
+            border: 1.5px solid #01CDFD;
+            height: 32px;
+            width: 96px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 12px;
+            color: #01CDFD;
+        }
+    }
+}

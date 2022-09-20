@@ -1,0 +1,100 @@
+$small: 300px;
+$medium: 990px;
+.smth {
+    //some CSS
+    @media screen and (max-width: $small) {
+        //do Smth
+    }
+    @media screen and (min-width: $medium) {
+        //do Smth
+    }
+}
+
+.article {
+    font-weight: 600;
+    // display: flex;
+    height: 100%;
+    // align-items: center;
+    // justify-content: space-between;
+    width: 100%;
+    .wrapper {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.cardContainer {
+    margin: 0;
+    margin-right: 16px;
+    width: 100%;
+    height: 100%;
+    @media screen and (max-width: $medium) {
+        margin: 0 10px 10px 10px !important;
+    }
+    .card {
+        background-color: #131722a8;
+        margin: 0;
+        padding: 18px 24px;
+        height: 100%;
+        .wrapper {
+            align-items: flex-start;
+            flex-flow: column;
+            .title {
+                margin: 0;
+                font-family: 'Lexend';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                color: #9BB0CF;
+            }
+            .nextLine {
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }
+            .icon {
+                margin: 0;
+                margin-right: 6px;
+                width: 24px;
+                height: 24px;
+            }
+            span {
+                margin: 0;
+            }
+            .value {
+                font-family: 'Lexend';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 19px;
+                line-height: 24px;
+                margin-right: 6px;
+            }
+            .subValue {
+                display: flex;
+                align-items: center !important;
+                font-family: 'Lexend';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 22px;
+                color: #9BB0CF;
+            }
+            .arrowDown {
+                width: 100%;
+                text-align: center;
+                margin: 5px 0 10px 0;
+            }
+            .nextLineVote {
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin-top: 14px !important;
+                flex-direction: row;
+            }
+        }
+    }
+}

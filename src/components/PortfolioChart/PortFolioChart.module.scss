@@ -1,0 +1,123 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.pieChart {
+  display: flex;
+  justify-content: space-evenly;
+  background: $theme_light_black_color;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 50%);
+  border-radius: 15px;
+  height: 215px;
+  padding: 4px;
+  padding-top: 7px;
+
+  @include mobile {
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    height: 100%;
+  }
+  .chartContainer {
+    padding-left: 2px;
+    opacity: 1;
+    width: 50%;
+  }
+
+  canvas {
+    opacity: 1 !important;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    opacity: 1;
+    flex: 50%;
+    // margin-right: 6px;
+
+    .tabs {
+      display: flex;
+      justify-content: flex-start;
+    align-items: flex-start;
+      opacity: 1;
+      width: 100%;
+      margin-top: 5px;
+      .pl4 {
+        padding-left: 8px;
+        cursor: pointer;
+      }
+      @include mobile{
+        justify-content: unset;
+        align-items: flex-start;
+        margin-right: unset;
+        margin-left: 15px;
+      }
+    }
+  }
+}
+.pieChartLoad {
+  padding: 0px !important;
+  max-width: 100%;
+}
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  // width: 200px;
+  height: 120px;
+  opacity: 1;
+  width: 100%;
+  margin-left: 10px;
+
+  @include mobile{
+    flex-direction: column;
+    flex-wrap: unset;
+    margin-left: 15px;
+  }
+
+  .assetTitles {
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    opacity: 1;
+    padding-left: 2px;
+  }
+  .holdingData {
+    flex: 50%;
+  }
+}
+.emptyChartHolding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  @include mobile{
+    margin-left: 15px;
+  }
+}
+.holdingText {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  display: flex;
+  align-items: center;
+
+  color: #9bb0cf;
+}
+.startTrading {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+
+  color: #1fc1e8;
+}

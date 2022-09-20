@@ -1,0 +1,170 @@
+@import "../styles/mixins";
+
+$padding: 20px;
+
+.component {
+  // height: 100%;
+  background: $theme_black_color;
+  border-radius: 20px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include mobile {
+    margin-top: 0px;
+  }
+}
+
+.header {
+  @include desktop {
+    @include flex(space-between);
+  }
+
+  padding: $padding;
+  padding-top: 22px;
+  padding-bottom: 26px;
+
+  // @media (min-width: 1155px) {
+  //   display: block;
+  //   position: relative;
+  // }
+
+  @media (min-width: 709px) and (max-width: 1454px) {
+    display: block;
+  }
+}
+
+.subHeader {
+  // @include flex(space-between);
+}
+
+.onlyDesktop {
+  @include mobile {
+    display: none !important;
+  }
+}
+
+.onlyCustomDesktop {
+  @include customMobile {
+    display: none !important;
+  }
+
+  @media (min-width: 709px) and (max-width: 1454px) {
+    display: none;
+  }
+}
+
+.chartMode {
+  @media (max-width: 1404px) and (min-width: 1455px) {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+}
+
+.onlyCustomPad {
+  display: none;
+
+  @media (min-width: 1170px) and (max-width: 1454px) {
+    display: block;
+  }
+}
+
+.onlyMobile {
+  @include desktop {
+    display: none !important;
+  }
+}
+
+.onlyCustomMobile {
+  @include customDesktop {
+    display: none !important;
+  }
+}
+
+.token {
+  @include flex(flex-start);
+  font-size: 16px;
+  font-weight: 700;
+
+  @media (min-width: 709px) and (max-width: 1454px) {
+    justify-content: space-between;
+  }
+}
+
+.symbol {
+  color: $battleship;
+  margin-right: 5px;
+}
+
+.price {
+  margin-left: 5px;
+}
+
+.ranges {
+  background-color: rgba(45, 45, 45, 0.5);
+  padding: 2px;
+  border-radius: 10px;
+  @include mobile {
+    margin-top: 10px;
+  }
+
+  .button:not(:first-child) {
+    margin-left: 10px;
+  }
+
+  @media (min-width: 992px) and (max-width: 1050px) {
+    .button:not(:first-child) {
+      margin-left: 2px;
+    }
+  }
+
+  @media (max-width: 1454px) and (min-width: 1155px) {
+    margin-top: 5px;
+  }
+}
+
+.button {
+  @include transition;
+
+  border-style: solid;
+  font-size: 11px;
+  font-weight: 500;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+
+  &.active {
+    background-color: $theme_black_color;
+    border-color: white;
+    color: white;
+  }
+
+  // @media (max-width: 1515px) and (min-width: 991px) {
+  //   &[data-type="desktop"] {
+  //     display: none;
+  //   }
+  // }
+}
+
+.description {
+  padding: $padding;
+  padding-top: 0;
+}
+
+.removeTop {
+  margin-top: -10px;
+}
+.ml{
+  // margin-left: 200px;
+  @include mobile{
+    margin-left: 32px;
+    margin-left: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.headerChartLeft{
+  display: flex;
+}

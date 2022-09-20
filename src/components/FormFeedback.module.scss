@@ -1,0 +1,21 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+
+.component {
+  @include flex(flex-start, flex-start);
+  font-size: 14px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.help {
+  color: $brown;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.red {
+  color: $red !important;
+}

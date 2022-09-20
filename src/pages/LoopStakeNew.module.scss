@@ -1,0 +1,39 @@
+.stakePage {
+    text-align: center;
+    .switchPages {
+        width: 433px;
+        height: 56px;
+        background: #2F3144;
+        box-shadow: inset -4px -3px 9px rgba(255, 255, 255, 0.04), inset 3px 6px 15px -1px rgba(31, 32, 48, 0.9);
+        border-radius: 47px;
+        padding: 5px 5px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        .switchBtn {
+            flex: 1;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            /* button blue */
+            border-radius: 24px;
+            font-family: 'Lexend';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            cursor: pointer !important;
+            img {
+                width: 17px;
+                height: 17px;
+                margin-right: 8px;
+            }
+        }
+        .active {
+            background: #0998B9;
+            color: white;
+            font-weight: 700;
+        }
+    }
+}

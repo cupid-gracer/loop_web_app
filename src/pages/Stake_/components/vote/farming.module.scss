@@ -1,0 +1,118 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+.panelHeader {
+    align-items: center;
+    justify-content: space-between;
+    div:nth-child(1) {
+        span :nth-child(1) {
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 19px;
+        }
+        span:nth-child(2) {
+            color: #F376C3;
+        }
+        div {
+            justify-content: flex-start;
+            span {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+                &:nth-child(1) {
+                    color: #919191;
+                }
+                &:nth-child(2) {
+                    color: #F376C3;
+                }
+            }
+        }
+    }
+    div:nth-child(2) {
+        display: flex;
+        justify-content: flex-end;
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 267px;
+            height: 46px;
+            border: 1px solid #01CDFD;
+            border-radius: 8px;
+            img {
+                margin-right: 7px;
+            }
+            span {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+.card {
+    background-color: #131722a8;
+    padding: 0;
+    margin-top: 31px;
+    section {
+        padding: 0;
+    }
+    .composition {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        div {
+            background: #2A2E39;
+            border-radius: 5px;
+            padding: 3px 13px;
+            margin-right: 10px;
+            span {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 21px;
+                color: #9BB0CF;
+            }
+        }
+    }
+    .APR {
+        text-align: center;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 19px;
+        color: white;
+    }
+    .icontableHub {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        span {
+            margin-left: 9px;
+        }
+    }
+    .reward {
+        div:nth-child(2) {
+            font-weight: 400;
+            font-size: 9px;
+            line-height: 11px;
+            color: #9BB0CF;
+        }
+    }
+}
+
+.expandBtn {
+    margin: 20px !important;
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height, or 150% */
+    color: $theme_dark_blue_color;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px dashed $theme_dark_blue_color;
+    cursor: pointer;
+    width: fit-content;
+    padding: 2px;
+    margin-left: 10px;
+}

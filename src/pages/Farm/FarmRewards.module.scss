@@ -1,0 +1,56 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.price{
+  margin-right: 5px;
+  color: $theme_light_blue_color;
+}
+.timeLeft{
+  color: $theme_light_blue_color;
+}
+
+.price_v3{
+  margin-right: 5px;
+  color: $theme_bule_color;
+  font-size: 16px;
+  font-weight: bold;
+}
+.price_v4{
+  margin-right: 5px;
+  color: $input_text_color;
+  font-size: 19px;
+  font-weight: bold;
+}
+.price_v3Sm{
+  font-size: 12px;
+}
+.whiteMd{
+  color: white !important;
+  font-size: 16px !important;
+  font-weight: normal;
+}
+.whiteSm{
+  font-size: 12px !important;
+}
+.symbol{
+  color: white !important;
+  font-size: 16px !important;
+  font-weight: normal;
+}
+.symbolSm{
+  font-size: 12px !important;
+}
+.sm{
+  font-size: 10px;
+  color: $disabledColor;
+  font-weight: normal;
+}

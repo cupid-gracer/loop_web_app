@@ -1,0 +1,341 @@
+.card {
+    background-color: #131722a8;
+}
+
+.panelSubtitle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #9BB0CF;
+    div:nth-child(1) {
+        padding-right: 36px;
+        text-align: end;
+        border-right: 1px solid #2D2D2D;
+        div {
+            span:nth-child(1) {
+                font-family: 'Lexend';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 19px;
+                line-height: 24px;
+                color: #C83E93;
+            }
+            span:nth-child(2) {
+                font-family: 'Lexend';
+                font-style: normal;
+                font-size: 19px;
+                line-height: 24px;
+                color: white;
+            }
+        }
+    }
+    div:nth-child(2) {
+        margin-left: 36px;
+        display: flex;
+        align-items: center;
+        button {
+            width: 96px;
+            height: 42px;
+            font-family: 'Lexend';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 12px;
+            border-radius: 10px;
+            border: 1.5px solid #01CDFD;
+            color: #01CDFD;
+            &:nth-child(1) {
+                margin-right: 16px;
+                color: #01CDFD;
+            }
+            &:nth-child(2) {
+                background-color: #1FC1E8;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                span {
+                    font-family: 'Lexend';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 10px;
+                    line-height: 12px;
+                    color: #2D2D2D;
+                }
+            }
+        }
+    }
+}
+
+.panelHeader {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #2D2D2D;
+}
+
+.panelTitle {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+}
+
+.myStakedTable {
+    table {
+        margin: 0 !important;
+        font-family: 'Lexend';
+        tr {
+            height: 68px;
+        }
+        thead tr {
+            border-bottom: 1px solid #2D2D2D;
+            height: 50px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #9BB0CF;
+            .voteEscrowTeam {
+                font-weight: 400;
+            }
+        }
+        tbody tr {
+            &:nth-child(odd) {
+                background: rgba(19, 23, 34, 0.5);
+            }
+            &:nth-child(even) {
+                background: #20202E;
+            }
+            cursor: pointer;
+        }
+        .voteEscrowTeam {
+            padding: 0 0 0 20px !important;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 19px;
+            div {
+                display: inline-flex;
+                align-items: center;
+                img {
+                    margin-right: 7px;
+                }
+            }
+        }
+        .yield,
+        .nextReward,
+        .loopPower {
+            text-align: left;
+        }
+        tbody .yield {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 19px;
+            color: #32FE9A;
+        }
+        tbody .nextReward {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 19px;
+            span {
+                &:nth-child(1) {
+                    color: #1FC1E8;
+                    margin-right: 3px;
+                }
+                &:nth-child(even) {
+                    font-weight: normal;
+                    font-size: 13px;
+                }
+            }
+        }
+        tbody .loopPower {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 19px;
+        }
+        tbody .totalValue {
+            div {
+                padding-right: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            span {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 19px;
+            }
+            img {
+                cursor: pointer;
+            }
+        }
+        tbody .action {
+            button {
+                border-radius: 10px;
+                border: 1.5px solid #01CDFD;
+                height: 32px;
+                width: 96px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 12px;
+                color: #01CDFD;
+            }
+        }
+        tbody .expand {
+            background-color: #272D3E !important;
+        }
+        tbody .expandRow {
+            background-color: #2D3343 !important;
+            border-bottom: 1px solid #333B50;
+            font-family: 'Lexend';
+            font-style: normal;
+            .btnMint {
+                background-color: #32FE9A;
+                box-shadow: 0px 2px 60px rgba(50, 254, 154, 0.25);
+                border-radius: 8px;
+                width: 128px;
+                height: 42px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                span {
+                    font-family: 'Lexend';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 10px;
+                    line-height: 12px;
+                    color: #1B1B1B;
+                }
+            }
+            .weight {
+                span {
+                    display: block;
+                    &:nth-child(1) {
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #BBBBBB;
+                    }
+                    &:nth-child(2) {
+                        font-weight: 700;
+                        font-size: 15px;
+                        line-height: 19px;
+                        color: #1FC1E8;
+                    }
+                }
+            }
+            .nextReward {
+                span {
+                    display: block;
+                    &:nth-child(1) {
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #BBBBBB;
+                    }
+                    &:nth-child(3) {
+                        font-weight: 400;
+                        font-size: 9px;
+                        line-height: 11px;
+                        color: #9BB0CF;
+                    }
+                }
+                div {
+                    span {
+                        font-weight: 600 !important;
+                        font-size: 15px !important;
+                        line-height: 19px !important;
+                        display: initial;
+                        &:nth-child(1) {
+                            color: #1FC1E8;
+                            margin-right: 3px;
+                        }
+                        &:nth-child(even) {
+                            font-weight: normal;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+            .loopPower {
+                div {
+                    display: flex;
+                    align-items: center;
+                    // justify-content: space-between;
+                    // padding-right: 20px;
+                    span {
+                        flex: 1;
+                        font-weight: 700;
+                        font-size: 15px;
+                        line-height: 19px;
+                        color: #1FC1E8;
+                    }
+                    div {
+                        flex: 1;
+                        button {
+                            border: 1px solid #01CDFD;
+                            border-radius: 10px;
+                            height: 28px;
+                            width: 74px !important;
+                            font-weight: 500;
+                            font-size: 10px;
+                            line-height: 12px;
+                            color: #01CDFD;
+                        }
+                    }
+                }
+            }
+        }
+        .remaingTime {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            .leftTime {
+                margin-top: 8px;
+                // display: flex;
+                // align-items: center;
+                // justify-content: space-between;
+            }
+        }
+        .timeBoard {
+            display: inline-block;
+            margin-right: 9px;
+            .digitalTime {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                div {
+                    &:nth-child(1),
+                    &:nth-child(2) {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 18.86px;
+                        height: 24px;
+                        margin-right: 1.26px;
+                        background: linear-gradient(180deg, #131313 0%, #181818 49.07%, #131313 100%);
+                        border-radius: 4px;
+                        span {
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+            div:nth-child(2) {
+                text-align: center;
+                font-weight: 400;
+                font-size: 9px;
+                line-height: 10px;
+                color: #BBBBBB;
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+@import "../styles/mixins";
+.submitBtn {
+    margin-top: 30px !important;
+}
+
+.portfolioHeader {
+    display: flex;
+    justify-content: space-evenly;
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.grid {
+    padding: 0 !important;
+    margin: 15px 0 !important;
+}
+
+.bannerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    padding: 20px;
+    width: 100%;
+    background: #13131380;
+    border-radius: 12px;
+    @include mobile {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.heading {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #9BB0CF;
+    z-index: 10;
+}
+
+.dflex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.icons {
+    width: 30px;
+    height: 30px;
+    margin-right: -9px;
+}
+
+.marginLeft {
+    margin-left: 10px;
+}
+
+.highestApy {
+    color: #32FE9A;
+}
+
+.loopLearn {
+    width: 128px;
+    height: 30px;
+    left: 1253px;
+    border: 1px solid #9BB0CF;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.smallIcon {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}

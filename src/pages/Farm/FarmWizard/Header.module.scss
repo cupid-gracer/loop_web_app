@@ -1,0 +1,40 @@
+@import "../../../styles/mixins";
+
+  .title{
+    display: flex;
+    width: 95%;
+    //margin-bottom: 20px;
+    justify-content: center;
+    margin: 0 !important;
+  }
+  @include desktop{
+    .centerDiv{
+      //margin-left: 17px;
+    }
+  }
+  .head{
+    font-size: 15px;
+    margin-left: 20px !important;
+  }
+  .closeCard{
+    width: 5%;
+    margin: 0 !important;
+    justify-content: center;
+    display: flex;
+  }
+.titleContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between !important;
+  margin-bottom: 30px;
+}
+
+.close{
+  width: 5%;
+  min-width: 5%;
+  background: transparent !important;
+  border: none !important;
+}
+.row{
+  margin-top: 0 !important;
+}

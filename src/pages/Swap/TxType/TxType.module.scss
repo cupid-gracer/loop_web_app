@@ -1,0 +1,40 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.dFlex {
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+}
+.dFlex .imageWrapper {
+  background: #2d2d2d;
+  border-radius: 50px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text1 {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 4px;
+}
+.text2 {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+
+  padding-left: 4px;
+}

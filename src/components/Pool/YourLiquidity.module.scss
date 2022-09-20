@@ -1,0 +1,359 @@
+@import "../../styles/mixins";
+.poolCard {
+  font-size: 22px;
+  display: flex;
+  flex: none;
+  //min-width: 50px;
+  span {
+    font-size: 16px !important;
+    font-weight: bolder;
+    color: #fff !important;
+    cursor: pointer;
+  }
+  .active {
+    border-bottom: solid 2px $pink;
+    color: $pink !important;
+  }
+}
+
+.flex {
+  @include desktop {
+    @include flex(space-between, flex-start);
+    margin-top: -23px;
+  }
+}
+.v2Container{
+  margin: 0 0 10px 0;
+}
+.content {
+  @include desktop {
+    flex: 1;
+  }
+  margin: 10px;
+}
+
+.chart {
+  @include desktop {
+    flex: 1;
+  }
+  margin: 10px;
+  align-self: flex-start;
+}
+
+
+.your_liquidity_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.msg{
+  font-weight: normal;
+  text-align: center;
+  margin: 20px;
+  @include mobile {
+      margin: 20px 0;}
+}
+@include mobile {
+  .msg br{display: none;}
+    }
+
+
+  .childPool > div{
+    margin-bottom:15px;
+  }
+
+
+  .noMobile {
+    @include mobile {
+      display: none;
+    }
+  }
+  
+.farmingWizard {
+  margin-bottom: 20px;
+  .Card {
+    border-radius: 20px;
+    box-shadow: none;
+  }
+  .content {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+    @include mobile {
+      display: block;
+      padding: 10px;
+      text-align: center;
+    }
+    .button {
+      width: 70%;
+      font-size: 14px;
+      background: #0998B9;
+      border-color: #0998B9;
+      margin-left: -75px !important;
+
+      &:hover {
+        background: #08839e !important;
+        border-color: #08839e !important;
+      }
+      @include mobile {
+        width: 100%;
+        margin-left: unset !important;
+      }
+    }
+    span {
+      justify-content: flex-start;
+      align-items: center;
+      display: inline-flex;
+      gap: 10px;
+      font-size: 13px;
+      margin-left: -35px;
+      @include mobile {
+        margin-left: 0 !important;
+      }
+    }
+  }
+}
+
+.recommendedSwap {
+  margin-bottom: 20px;
+  article { 
+    padding: 0 !important;
+  }
+  .poolCard span {
+    margin: 0 10px;
+    margin-top: 7px;
+    font-weight: normal;
+    justify-content: flex-start;
+    align-items: center;
+    display: inline-flex;
+    grid-gap: 5px;
+  }
+  .Card {
+    border-radius: 20px;
+    box-shadow: none;
+  }
+  .content {
+    padding: 4.5px;
+    background: rgba(45, 45, 45, 0.5);
+    border-radius: 8px;
+    margin: 10px 15px;
+    @include mobile {
+      display: block;
+      padding: 10px;
+      text-align: center;
+    }
+    .button {
+      width: 70%;
+      font-size: 14px;
+      background: #0998B9;
+      border-color: #0998B9;
+      &:hover {
+        background: #08839e !important;
+        border-color: #08839e !important;
+      }
+      @include mobile {
+        width: 100%;
+      }
+    }
+    .percent {
+
+      margin: 0 10px;
+      float: right;
+      margin-top: 10px;
+      font-weight: normal;
+      font-size: 16px;
+      justify-content: flex-start;
+      align-items: center;
+      display: inline-flex;
+      grid-gap: 5px;
+      .up {
+        font-weight: normal;
+        color: #32FE9A;
+        justify-content: flex-start;
+        align-items: center;
+        display: inline-flex;
+        grid-gap: 5px;
+        img {
+          width: 11px;
+        }
+      }
+      @include mobile {
+        margin-left: 0 !important;
+      }
+    }
+  }
+}
+.recommended {
+  margin-bottom: 20px;
+  .list {
+    padding: 10px;
+    overflow: auto;
+    height: 309px;
+    .info {
+      display: none;
+      margin-top: 10px !important;
+      padding: 10px;
+      text-align: center !important;
+      color: #BBBBBB !important;
+      @include mobile {
+        display: block;
+      }
+    }
+  }
+  .openList {
+    padding: 10px;
+    overflow: auto;
+    max-height: 509px;
+    .info {
+      display: none;
+      margin-top: 10px !important;
+      padding: 10px;
+      text-align: center !important;
+      color: #BBBBBB !important;
+      @include mobile {
+        display: block;
+      }
+    }
+  }
+  .defaultList{
+    padding: 10px;
+    overflow: auto;
+    height: 305px;
+    .info {
+      display: none;
+      margin-top: 10px !important;
+      padding: 10px;
+      text-align: center !important;
+      color: #BBBBBB !important;
+      @include mobile {
+        display: block;
+      }
+    }
+  }
+  @include mobile {
+    .token {
+      background: #2D2D2D;
+      border-radius: 8px;
+      padding: 6px;
+    }
+    .percent{
+      background: #2D2D2D;
+      border-radius: 8px;
+      padding: 6px;
+    }
+  }
+  span {
+    margin: 5px;
+    text-align: left;
+    font-weight: normal;
+    justify-content: flex-start;
+    align-items: center;
+    display: inline-flex;
+    grid-gap: 5px;
+  }
+
+  .Card {
+    border-radius: 20px;
+    box-shadow: none;
+  }
+  .content {
+    padding: 4.5px;
+    background: rgba(45, 45, 45, 0.5);
+    border-radius: 8px;
+    cursor: pointer;
+    @include mobile {
+      display: block;
+      margin: 5px 15px;
+      padding: 1px;
+      text-align: left;
+    }
+    .button {
+      width: 70%;
+      font-size: 14px;
+      background: #0998B9;
+      border-color: #0998B9;
+      &:hover {
+        background: #08839e !important;
+        border-color: #08839e !important;
+      }
+      @include mobile {
+        width: 100%;
+      }
+    }
+    .percent {
+      margin: 5px 10px;
+      float: right;
+      margin-top: 8px;
+      font-weight: normal;
+      font-size: 16px;
+      justify-content: flex-start;
+      align-items: center;
+      display: inline-flex;
+      grid-gap: 5px;
+      .up {
+        font-weight: normal;
+        color: #32FE9A;
+        justify-content: flex-start;
+        align-items: center;
+        display: inline-flex;
+        grid-gap: 5px;
+        img {
+          width: 11px;
+        }
+      }
+      @include mobile {
+        margin-top: 10px;
+        padding: 9px;
+      }
+    }
+  }
+}
+.percentageBtn{
+  padding: 10px;
+  overflow: auto;
+  height: 312px;
+  .info {
+    display: none;
+    margin-top: 10px !important;
+    padding: 10px;
+    text-align: center !important;
+    color: #BBBBBB !important;
+    @include mobile {
+      display: block;
+    }
+  }
+}
+.firstTokenBalanceBtn{
+  padding: 10px;
+  overflow: auto;
+  height: 305px;
+  .info {
+    display: none;
+    margin-top: 10px !important;
+    padding: 10px;
+    text-align: center !important;
+    color: #BBBBBB !important;
+    @include mobile {
+      display: block;
+    }
+  }
+}
+.newList{
+  padding: 10px;
+  overflow: auto;
+  height: 312px;
+  .info {
+    display: none;
+    margin-top: 10px !important;
+    padding: 10px;
+    text-align: center !important;
+    color: #BBBBBB !important;
+    @include mobile {
+      display: block;
+    }
+  }
+}

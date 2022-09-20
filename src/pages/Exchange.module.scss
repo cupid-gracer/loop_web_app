@@ -1,0 +1,95 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+
+.state {
+  div div section {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 460px) {
+  .state {
+    div div section {
+      // height: 100%;
+      padding-left: 0;
+    }
+  }
+}
+
+.state {
+  @include desktop {
+    margin-left: 0px;
+  }
+}
+
+.state {
+  display: inline-grid;
+}
+
+.transakBtn {
+  padding: 8px 28px;
+  border-radius: 5px;
+  color: black;
+  font-weight: 400;
+  background-color: #c83e93;
+}
+.assetsValue {
+  min-height: 83px;
+}
+.swapBox {
+  margin-top: 30px;
+}
+.swapBoxHide {
+  display: none;
+}
+.stateSwap {
+  max-width: 380px;
+  min-width: 380px;
+  @include mobile {
+    max-width: calc(100% - 30px);
+    min-width: calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+}
+.swapContainer {
+  justify-items: center;
+  @media (max-width: 991px){ 
+    padding: 0 15px;
+  }
+}
+.stateSwap header + section {
+  padding-top: 0 !important;
+}
+.poolBox {
+  margin-top: 20px;
+}
+
+.trade_chart {
+  background: $theme_black_color;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: $border-radius;
+  position: relative;
+  overflow: hidden;
+}
+  .chartI{
+    border: 1px solid white;
+    padding: 0px 4px;
+    font-size: 9px;
+    margin-right: 6px;
+    border-radius: 6px;
+  }
+  
+  .chartMessage{
+    font-size:11px;
+    float:right;
+    margin-top:8px;
+  }
+  .blankSwapContainer{
+    @include desktop{
+      height: 360px;
+    }
+  
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }

@@ -1,0 +1,66 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+
+.button {
+  @include flex;
+  @include button;
+
+  background-color: #1b1b1b;
+  border-radius: 6px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $theme_black_border_color;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  height: 36px;
+  padding: 0 10px;
+  border: none;
+
+  &:hover {
+    background-color: $theme_purple_btn;
+    text-decoration: none;
+  }
+
+  i {
+    margin-right: 5px;
+  }
+}
+.connectWalletButton{
+
+  @include flex;
+  @include button;
+
+  background-color: #bf20ab ;
+  border-radius: 6px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $theme_black_border_color;
+  color: #1b1b1b;
+  font-size: 13px;
+  font-weight: 600;
+  height: 35px;
+  padding: 0 10px;
+  border: none;
+
+  &:hover {
+    background-color: $theme_purple_btn;
+    text-decoration: none;
+  }
+
+  i {
+    margin-right: 5px;
+  }
+
+}
+
+.address {
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.simpleBtnFlex{
+  display: flex;
+  color: #9bb0cf;
+}

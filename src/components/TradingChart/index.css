@@ -1,0 +1,19 @@
+.TVChartContainer, .TVChartContainer iframe {
+	height: 100%;
+	border-radius: 20px;
+}
+
+.TVChartContainer .chart-page {
+	background-color: #1b1b1b;
+}
+
+.TVChartContainer.removeBorderTop, .TVChartContainer iframe.removeBorderTop {
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+.data{
+	display: flex;
+	justify-items: center;
+	justify-content: center;
+	height: 100%;
+}

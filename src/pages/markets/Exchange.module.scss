@@ -1,0 +1,61 @@
+@import "../../styles/mixins";
+.sm {
+  @include flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex: 2;
+
+  > * {
+    flex: 1;
+  }
+}
+.state{
+    div div section {
+      height: 100%;
+      padding-left: 15px;;
+    }}
+    
+  .transakBtn{
+    padding: 8px 28px;
+    border-radius: 5px;
+    color: black;
+    font-weight: 400;
+    background-color: #c83e93;
+  }
+  .assetsValue{min-height: 83px;}
+  .swapBox{
+    margin-top:30px;
+  }
+  .swapBoxHide{
+    display: none;
+  }
+  .stateSwap{
+    max-width: 370px;
+    min-width: 370px;
+    @include mobile{
+    max-width: calc(100% - 30px);
+      min-width: calc(100% - 30px);
+      width:calc(100% - 30px);
+    }
+  }
+  .swapContainer{
+    justify-items: center;
+  }
+.stateSwap header + section{padding-top:0 !important}
+  .poolBox{
+    margin-top:20px;
+  }
+
+  .chartI{
+    border: 1px solid white;
+    padding: 0px 4px;
+    font-size: 9px;
+    margin-right: 6px;
+    border-radius: 6px;
+  }
+  
+  .chartMessage{
+    font-size:11px;
+    float:right;
+    margin-top:8px;
+  }

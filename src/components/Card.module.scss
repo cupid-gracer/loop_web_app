@@ -1,0 +1,100 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+
+.card {
+  background: $theme_black_color;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: $border-radius;
+  position: relative;
+
+  &.lg {
+    border-radius: 10px;
+  }
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.shadow {
+  box-shadow: 0 0 40px 0 fade-out(black, 0.7);
+}
+
+.padded {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  @include mobile {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    footer button {
+      margin: 10px 0 !important;
+      padding: 5px 5px !important;
+    }
+    footer a {
+      margin: 10px 0 !important;
+      padding: 5px 5px !important;
+    }
+  }
+}
+
+.link {
+  @include transition(border-color);
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+
+  &:hover {
+    border-color: $theme_green_color;
+  }
+}
+
+/* main */
+.main {
+  .tradingCard{
+    padding: 0 !important;
+  }
+  article {
+    padding: 2px !important;
+  }
+  padding: 15px;
+  height: 100%;
+  // @include mobile{
+  //   padding: 10px 0px 10px 10px;
+  // }
+  .lg & {
+    padding: 30px $card-padding-horizontal;
+  }
+  @media (max-width: 390px) {
+    .lg & {
+      padding: 30px 15px;
+    }
+  }
+
+  .full & {
+    padding: unset;
+  }
+}
+
+/* badges */
+.badges {
+  @include flex(flex-start);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.badge {
+  @include flex;
+  display: inline-flex;
+  font-size: 11px;
+  height: 20px;
+  padding: 0 15px;
+}
+
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background: fade-out($color, 0.5);
+  }
+}

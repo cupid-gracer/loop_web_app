@@ -1,0 +1,16 @@
+@import "../../styles/mixins";
+
+
+.migrate{
+    font-size:10px;
+    font-weight:500
+}
+.oneClickMigrate{
+    font-size:10px;
+    font-weight:500;
+
+ @include mobile{
+    font-size: 8px;
+}
+}
+

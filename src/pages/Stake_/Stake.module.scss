@@ -1,0 +1,38 @@
+.summary {
+    margin: 56px 0 34px 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.last {
+    margin: 0 !important;
+}
+
+.summaryBoard {
+    display: flex;
+    align-items: inherit;
+    justify-content: space-between;
+    margin-top: 44px;
+    margin-bottom: 66px;
+    flex-flow: row wrap;
+    .summaryCol {
+        display: flex;
+        flex: 1;
+        flex-flow: column;
+        &:nth-child(1) {
+            flex: 0.7;
+            padding-right: 16px;
+        }
+        &:nth-child(2) {
+            flex: 1;
+        }
+        .summaryRow {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &:nth-child(1) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+}

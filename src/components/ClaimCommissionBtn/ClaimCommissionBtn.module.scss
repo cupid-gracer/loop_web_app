@@ -1,0 +1,25 @@
+.btn{
+    background-color: #d8379a;
+    color: #1b1b1b;
+    border: 1px solid #d8379a;
+    margin-top: 12px;
+    padding: 8px;
+    border-radius: 5px;
+}
+.wrapper{
+    background: #1b1b1b;
+    border-radius: 5px;
+    padding: 10px;
+    transition-delay: 2s;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border:2px solid #d8379a;
+    box-shadow: 3px 2px #d8379a;
+}
+.ticker{
+    padding-left: 12px;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 400;
+}
